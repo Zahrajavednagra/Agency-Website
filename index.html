@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrightWeb Agency | Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating Background Blobs -->
+  <div class="bg-blur blur1"></div>
+  <div class="bg-blur blur2"></div>
+  <div class="bg-blur blur3"></div>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar glass">
+      <div class="logo">BrightWeb</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero luxury-hero">
+    <div class="hero-content">
+      <span class="hero-badge">✨ Creative Digital Agency</span>
+      <h1>Designing Websites That Feel <span>Luxury</span></h1>
+      <p>
+        We craft elegant, modern and responsive websites that make brands stand out beautifully online.
+      </p>
+      <div class="hero-buttons">
+        <a href="services.html" class="btn glow-btn">Explore Services</a>
+        <a href="contact.html" class="btn secondary-btn">Let's Talk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="section">
+    <div class="section-title">
+      <span>About Us</span>
+      <h2>Where Creativity Meets Clean Design</h2>
+      <p>
+        BrightWeb Agency blends strategy, aesthetics and functionality to create premium digital experiences for modern businesses.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section">
+    <div class="section-title">
+      <span>What We Do</span>
+      <h2>Our Premium Services</h2>
+    </div>
+
+    <div class="cards">
+      <div class="card luxury-card">
+        <div class="card-icon">🎨</div>
+        <h3>Luxury Web Design</h3>
+        <p>Visually striking, elegant and aesthetic website layouts for modern brands.</p>
+      </div>
+
+      <div class="card luxury-card">
+        <div class="card-icon">💻</div>
+        <h3>Responsive Development</h3>
+        <p>Seamless experiences across mobile, tablet and desktop screens.</p>
+      </div>
+
+      <div class="card luxury-card">
+        <div class="card-icon">🚀</div>
+        <h3>Brand Presence</h3>
+        <p>Helping businesses look premium and build stronger digital identity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section">
+    <div class="section-title">
+      <span>Portfolio</span>
+      <h2>Featured Projects</h2>
+      <p>Elegant designs built to impress, convert and perform beautifully.</p>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80" alt="Project 1">
+        <div class="portfolio-overlay">
+          <h3>E-Commerce Website</h3>
+          <button class="btn small-btn" onclick="openModal('E-Commerce Website', 'A premium online shopping website with elegant UI and modern product-focused layout.')">View Project</button>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=900&q=80" alt="Project 2">
+        <div class="portfolio-overlay">
+          <h3>Startup Landing Page</h3>
+          <button class="btn small-btn" onclick="openModal('Startup Landing Page', 'A luxury one-page landing website built for startup growth and conversions.')">View Project</button>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Project 3">
+        <div class="portfolio-overlay">
+          <h3>Personal Portfolio</h3>
+          <button class="btn small-btn" onclick="openModal('Personal Portfolio', 'A stylish personal portfolio for students, creatives and freelancers.')">View Project</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slider -->
+  <section class="section">
+    <div class="section-title">
+      <span>Highlights</span>
+      <h2>Creative Work Showcase</h2>
+    </div>
+    <div class="slider glass-card">
+      <img id="sliderImage" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Website Project">
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter glass-card">
+    <h2>Join Our Creative Newsletter</h2>
+    <p>Stay updated with web trends, design inspiration and exclusive offers.</p>
+    <form class="newsletter-form" onsubmit="subscribeNow(event)">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email">
+      <button type="submit" class="btn glow-btn">Subscribe</button>
+    </form>
+    <p id="newsletterMessage"></p>
+  </section>
+
+  <!-- Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content glass-card">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle">Project Title</h2>
+      <p id="modalText">Project description goes here.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 BrightWeb Agency | Crafted with style</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

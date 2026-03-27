@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightWeb Agency | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-blur blur2"></div>
+  <div class="bg-blur blur3"></div>
+
+  <header>
+    <nav class="navbar glass">
+      <div class="logo">BrightWeb</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+
+  <section class="section page-banner glass-card">
+    <span>Contact</span>
+    <h1>Let’s Create Something Beautiful</h1>
+    <p>We’d love to hear your ideas and bring them to life.</p>
+  </section>
+
+  <section class="section">
+    <form id="contactForm" class="contact-form glass-card" action="contact.php" method="POST">
+      <input type="text" id="name" name="name" placeholder="Your Name">
+      <input type="email" id="email" name="email" placeholder="Your Email">
+      <textarea id="message" name="message" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn glow-btn">Send Message</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <section class="section">
+    <div class="section-title">
+      <span>Visit Us</span>
+      <h2>Our Location</h2>
+    </div>
+    <div class="map-container glass-card">
+      <iframe
+        src="https://www.google.com/maps?q=Lahore%20Pakistan&output=embed"
+        width="100%"
+        height="320"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 BrightWeb Agency | Crafted with style</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
